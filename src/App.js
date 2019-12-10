@@ -17,11 +17,29 @@ class App extends Component {
         name: "Stephanie",
         age: 26
       }
-    ]
+    ],
+    otherState: "some other value"
   };
 
   switchNameHandler = () => {
-    console.log("switchNameHandler");
+    // console.log("switchNameHandler");
+    // DON'T DO THIS: this.state.persons[0].name = "Tulio";
+    this.setState({
+      persons: [
+        {
+          name: "Tulio",
+          age: 28
+        },
+        {
+          name: "Manu",
+          age: 29
+        },
+        {
+          name: "Stephanie",
+          age: 33
+        }
+      ]
+    });
   };
 
   render() {
