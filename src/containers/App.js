@@ -32,7 +32,7 @@ class App extends Component {
   }
 
   static getDerivedStateFromProps(props, state) {
-    console.log("[App,js] getDerivedStateFromProps", props);
+    console.log("[App.js] getDerivedStateFromProps", props);
     return state;
   }
 
